@@ -1,6 +1,10 @@
 name: Github Action Basic Apply
 
-on: [push, issue, pull_request, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+  issue:
+  pull_request:
 
 jobs:
   Github_Action_Basic_Apply:
