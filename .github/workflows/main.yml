@@ -1,0 +1,14 @@
+name: Github Action Basic Apply
+
+on: [push, issue, pull_request, workflow_dispatch]
+
+jobs:
+  Github_Action_Basic_Apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: run action
+        uses: PanicBear/github-action-basic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
