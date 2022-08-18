@@ -9,6 +9,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
       - name: run action
-        uses: PanicBear/github-action-basic@v1
+        uses: PanicBear/github-action-basic@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
